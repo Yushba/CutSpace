@@ -1,0 +1,130 @@
+.benefits {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+}
+
+.benefits-text-block {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.benefits-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: $dark;
+
+    @include mediaPhone {
+        font-size: 28px;
+    }
+}
+
+.benefits-subtitle {
+    font-size: 16px;
+    color: $dark;
+}
+
+.benefits-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+    @include mediaPhone {
+        flex-direction: column;
+    }
+}
+
+.benefits-orn-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 540px;
+    height: 365px;
+    background: $orange;
+    border-radius: 30px;
+
+    @include mediaTablet {
+        width: 480px;
+        height: 335px;
+    }
+
+    @include mediaSTablet {
+        width: 400px;
+        height: 305px;
+    }
+}
+
+.orn-card-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: $bg-white;
+
+    @include mediaSTablet {
+        font-size: 32px;
+    }
+
+    @include mediaPhone {
+        font-size: 28px;
+    }
+}
+
+.orn-card-subtitle {
+    font-size: 16px;
+    color: $bg-white;
+
+    @include mediaSTablet {
+        font-size: 14px;
+    }
+}
+
+.benefits-wht-card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    width: 540px;
+    height: 365px;
+    background: $bg-white;
+    border-radius: 30px;
+
+    @include mediaTablet {
+        width: 480px;
+        height: 335px;
+    }
+
+    @include mediaSTablet {
+        width: 400px;
+        height: 305px;
+    }
+}
+
+.wht-card-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: $dark;
+
+    @include mediaSTablet {
+        font-size: 32px;
+    }
+
+    @include mediaPhone {
+        font-size: 28px;
+    }
+}
+
+.wht-card-subtitle {
+    font-size: 16px;
+    color: $dark;
+
+    @include mediaSTablet {
+        font-size: 14px;
+    }
+}

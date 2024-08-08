@@ -1,0 +1,127 @@
+.team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding-bottom: 125px;
+}
+
+.team-text-block {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    @include mediaSTablet {
+        width: 100%;
+    }
+}
+
+.team-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: $dark;
+    
+    @include mediaSTablet {
+        font-size: 32px;
+    }
+}
+
+.team-subtitle {
+    font-size: 16px;
+    color: $dark;
+
+    @include mediaSTablet {
+        font-size: 14px;
+    }
+}
+
+.team-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+    @include mediaSTablet {
+        gap: 60px;
+        flex-direction: column;
+    }
+}
+
+.team-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0px 17px 42px rgba(0, 0, 0, 0.12);  
+
+    @include mediaTablet {
+        width: 28%;
+    }
+
+    @include mediaSTablet {
+        justify-content: center;
+        flex-direction: row;
+        width: 100%;
+    }
+}
+
+.team-content {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    text-align: left;
+    width: 90%;
+    padding: 30px 10px;
+} 
+
+.team-img {
+    position: relative;
+
+    @include mediaSTablet {
+        width: 100%;
+    }
+}
+
+.developer-playbtn {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    transition: all 0.2s ease-in;
+
+    &:hover {
+        transform: scale(1.1);
+    }
+}
+
+.developer-adding {
+    position: absolute;
+    top: -40px;
+    right: -40px;
+
+}
+
+.developer-name {    
+    font-size: 18px;
+    font-weight: bold;
+    color: $dark;
+
+    @include mediaSTablet {
+        font-size: 16px;
+    }
+}
+
+.developer-city {
+    font-size: 16px;
+
+    @include mediaSTablet {
+        font-size: 14px;
+    }
+}
+
+.orn {
+    color: $orange;
+}
+
+.blu {
+    color: $blue;
+}

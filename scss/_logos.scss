@@ -1,0 +1,28 @@
+.compani-logos {
+    padding: 100px 0;
+    display: flex;
+    justify-content: center;
+    gap: 64px;
+
+    @include mediaTablet {
+        gap: 34px;
+    }
+
+    @include mediaSTablet {
+        gap: 0px;
+    }
+}
+
+.compani-logo {
+    transition: all 0.3s ease-in;
+    padding: 20px;
+    
+    &:hover {
+        border-radius: 6%;
+        background: $bg-muted;
+    }
+
+    @include mediaSTablet {
+        width: 22%;
+    }
+}

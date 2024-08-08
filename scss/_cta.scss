@@ -1,0 +1,115 @@
+.cta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 154px 0;
+}
+
+.content-cta {
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    text-align: left;
+    background: $blue;
+    padding:  40px  80px ;
+    border-radius: 30px;
+
+    @include mediaTablet {
+        width: 85%;
+    }
+
+    @include mediaSTablet {
+        gap: 50px;
+        width: 80%;
+    }
+}
+
+.oval1 {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    @include mediaSTablet {
+        width: 25%;
+    }
+
+    @include mediaPhone {
+        display: none;
+    }
+}
+
+.oval2 {
+    position: absolute;
+    bottom: 0;
+
+    
+    @include mediaSTablet {
+        width: 50%;
+    }
+
+    @include mediaPhone {
+        display: none;
+    }
+}
+
+.dashboard {
+    margin-left: -80px;
+    margin-bottom: -40px;
+    border-radius: 0 30px 0 0 ;
+    z-index: 1;
+
+    @include mediaPhone {
+        display: none;
+    }
+}
+
+.cta-text-block {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @include mediaPhone {
+        text-align: center;
+    }
+}
+
+.cta-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: $bg-white;
+
+    
+    @include mediaSTablet {
+        font-size: 32px;
+    }
+
+    @include mediaPhone {
+        font-size: 28px;
+    }
+}
+
+.cta-subtitle {
+    color: $bg-white;
+    font-size: 16px;
+
+    @include mediaSTablet {
+        font-size: 14px;
+    }
+}
+
+.btns {
+    display: flex;
+    gap: 25px;
+
+    @include mediaSTablet {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    @include mediaPhone {
+        flex-direction: row ;
+    }
+}
